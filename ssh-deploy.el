@@ -5,8 +5,8 @@
 ;; Author: Christian Johansson <christian@cvj.se>
 ;; Maintainer: Christian Johansson <christian@cvj.se>
 ;; Created: 5 Jul 2016
-;; Modified: 1 Jul 2023
-;; Version: 3.1.15
+;; Modified: 2 Jul 2023
+;; Version: 3.1.16
 ;; Keywords: tools, convenience
 ;; URL: https://github.com/cjohansson/emacs-ssh-deploy
 
@@ -174,7 +174,7 @@
 (put 'ssh-deploy-on-explicit-save 'safe-local-variable 'integerp)
 
 (defcustom ssh-deploy-run-script-on-explicit-save 0
-  "Boolean variable if deploy script should be executed on explicit save, 0 by default."
+  "Boolean variable if script should be executed on save, 0 by default."
   :type 'integer)
 (put 'ssh-deploy-run-script-on-explicit-save 'permanent-local t)
 (put 'ssh-deploy-run-script-on-explicit-save 'safe-local-variable 'integerp)
